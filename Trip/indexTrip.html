@@ -10,10 +10,23 @@
 
 <body>
   
-
+  
 
 <label for="tripdate">Select the date</label>
-<input type="date" id="tripdate"></input>
+<input type="date" id="tripdate">
+<button type="button" onclick="myFunction()">Validate date</button>
+
+<script>
+  
+  function myFunction() {
+    
+
+    tripdate=document.getElementById("tripdate").value;
+    localStorage.setItem("tripdate", tripdate);
+
+    
+  }
+  </script>
 
 <br>
 <br>
