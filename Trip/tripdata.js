@@ -6,32 +6,54 @@ $('#add').click(function () {
             result = true;
         }
     }
-    if (result === false) {
+
+    if (($('#visits').val()) === '') {
+        alert('select a trip')
+
+    };
+    if ((result === false) && (($('#visits').val()) !== '')) {
         visits.push($('#visits').val())
 
-        $('#triplist').append('<li>'+$('#visits').val()+'</li>')
+        $('#triplist').append('<li>' + $('#visits').val() + '</li>')
 
     }
-    else
-        alert("this destination is already selected")
+
 })
 
+  
+  function tripdatefunction() {
+    
 
-function handletsubmit(){
+    tripdate=document.getElementById("tripdate").value;
+    localStorage.setItem("tripdate", tripdate);
+    document.getElementById("date").innerHTML = "";
+    $('#date').append(tripdate)
+    
+  }
 
-      i = document.getElementById('visits').value;
+
+function handletsubmit() {
+
+    i = document.getElementById('visits').value;
 
     localStorage.setItem(i, i);
 
-   
-
-   
 }
 
-function removetrip(){
-    
+function removetrip() {
+    localStorage.clear();
+    tripdate = document.getElementById("tripdate").value;
+    localStorage.setItem("tripdate", tripdate);
+    $('#triplist').empty()
+
+    visits = [];
+}
+
+$('#submittrip').click(function(){
  
-    $('li').last().remove()
-    visits.pop()
-}
+    if((visits.length=== 0)||(($('#tripdate').val()===undefined))||(($('#ridetype').val())===undefined)||(($('#nbrperson').val())===undefined)){
+alert('please fill all field')
+    }
+else window.open("file:///C:/Users/Dream%20Team/Desktop/project1/hotel-alpha-1stproject/Trip/tripresume.html");
+})
 

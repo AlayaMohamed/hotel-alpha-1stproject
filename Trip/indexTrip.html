@@ -14,19 +14,9 @@
 
 <label for="tripdate">Select the date</label>
 <input type="date" id="tripdate">
-<button type="button" onclick="tripdatefunction()">Validate date</button>
+<button type="button" onclick="tripdatefunction()" >Validate date</button>
 
-<script>
-  
-  function tripdatefunction() {
-    
 
-    tripdate=document.getElementById("tripdate").value;
-    localStorage.setItem("tripdate", tripdate);
-    $('#date').append(tripdate)
-    
-  }
-  </script>
 <div id="date"></div>
 <br>
 <br>
@@ -41,7 +31,7 @@
 </select>
 
 <button id="add" onclick="handletsubmit()" >add to your trip</button>
-<button id="remove" onclick="removetrip()" >remove from your trip</button>
+<button id="remove" onclick="removetrip()" >Clear all trips</button>
 
 <br>
 <div>
@@ -53,7 +43,7 @@
 <br>
 
 <label for="ridetype">Choose a ride vehicule:</label>
-<select name="ridetype" id="ridetype">
+<select name="ridetype" id="ridetype" required>
   <option value=""></option>
   <option value="car">A Car</option>
   <option value="Bus">A bus</option>
@@ -64,7 +54,7 @@
 <br>
 
 <label for="nbrperson">Please select how many persons:</label>
-<input type="number"id="nbrperson"></input>
+<input type="number"id="nbrperson" required></input>
 
 
 
@@ -73,8 +63,9 @@
 
 <label for="commenttrip">add a comment:</label>
 <textarea id="commenttrip" rows="4" cols="50" name="comment" form="usrform"></textarea>
-
-
+<br>
+<br><br>
+<button id="submittrip">Submit</button>
 
 
 <script src="tripdata.js"></script>
