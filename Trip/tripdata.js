@@ -8,10 +8,21 @@ $('#add').click(function () {
     }
     if (result === false) {
         visits.push($('#visits').val())
+        x=$('#visits').val();
+        console.log(x)
+
     }
     else
         alert("this destination is already selected")
 })
 
 
-var tripdate;
+function handletsubmit(){
+
+      i = document.getElementById('visits').value;
+
+    localStorage.setItem(i, i)
+
+   return 
+}
+
