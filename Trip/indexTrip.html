@@ -23,11 +23,11 @@
 
     tripdate=document.getElementById("tripdate").value;
     localStorage.setItem("tripdate", tripdate);
-
+    $('#date').append(tripdate)
     
   }
   </script>
-
+<div id="date"></div>
 <br>
 <br>
 <label for="visits">Choose a destination:</label>
@@ -40,10 +40,16 @@
   <option value="Sousse">Visit Sousse</option>
 </select>
 
-<button id="add" onclick="handletsubmit()">add to your trip</button>
-
+<button id="add" onclick="handletsubmit()" >add to your trip</button>
+<button id="remove" onclick="removetrip()" >remove from your trip</button>
 
 <br>
+<div>
+  <ul id="triplist">
+
+  </ul>
+
+</div>
 <br>
 
 <label for="ridetype">Choose a ride vehicule:</label>

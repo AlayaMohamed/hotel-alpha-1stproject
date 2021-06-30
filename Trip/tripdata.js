@@ -8,8 +8,8 @@ $('#add').click(function () {
     }
     if (result === false) {
         visits.push($('#visits').val())
-        x=$('#visits').val();
-        console.log(x)
+
+        $('#triplist').append('<li>'+$('#visits').val()+'</li>')
 
     }
     else
@@ -21,8 +21,17 @@ function handletsubmit(){
 
       i = document.getElementById('visits').value;
 
-    localStorage.setItem(i, i)
+    localStorage.setItem(i, i);
 
-   return 
+   
+
+   
+}
+
+function removetrip(){
+    
+ 
+    $('li').last().remove()
+    visits.pop()
 }
 
