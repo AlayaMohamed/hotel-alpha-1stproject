@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html
-    style="background-color:transparent;border-top: 20px;border-bottom: 0px;border-left: 20px; border-right: 20px;border-style:solid; border-color:#270303; padding: 1cm;">
+  style="background-color:transparent;border-top: 20px;border-bottom: 0px;border-left: 20px; border-right: 20px;border-style:solid; border-color:#270303; padding: 1cm;">
+<link rel="stylesheet" href="roomstyle.css">
 
 <head>
 
@@ -8,50 +9,88 @@
 </head>
 
 <body>
+  
 
-
-    <div id="room1place">
-        <a>Superior double room with sea view</a>
-        <ul>
-            <li>Air conditioning</li>
-            <li>Free high speed Internet</li>
-            <li>Hairdryer</li>
-            <li>Balcony</li>
-            <li>Bath or shower</li>
-            <li>Towels</li>
-            <li>TV</li>
-        </ul>
+    <div class="texto" id="room1place">
+      <a>Superior double room with sea view</a>
+      <ul>
+        <li>Air conditioning</li>
+        <li>Free high speed Internet</li>
+        <li>Hairdryer</li>
+        <li>Balcony</li>
+        <li>Bath or shower</li>
+        <li>Towels</li>
+        <li>TV</li>
+      </ul>
     </div>
+      <div>
+        
+        <img class="mySlides1" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\double\double1.jpg"
+          style="width:50%">
+        <img class="mySlides1" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\double\double2.jpg"
+          style="width:50%">
+        <img class="mySlides1" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\double\double3.jpg"
+          style="width:50%">
 
-    <div id="room2place">
+        <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+
+
+      <div class="texto" id="room2place">
         <a>Superior suite with sea view</a>
         <ul>
-            <li>Air conditioning</li>
-            <li>Free high speed Internet</li>
-            <li>Hairdryer</li>
-            <li>Balcony</li>
-            <li>Bath or shower</li>
-            <li>Towels</li>
-            <li>TV</li>
+          <li>Air conditioning</li>
+          <li>Free high speed Internet</li>
+          <li>Hairdryer</li>
+          <li>Balcony</li>
+          <li>Bath or shower</li>
+          <li>Towels</li>
+          <li>TV</li>
         </ul>
-    </div>
+      </div> 
+      
+      <div>
+        <img class="mySlides2" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\suite\suite1.jpg"
+          style="width:50%">
+        <img class="mySlides2" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\suite\suite2.jpg"
+          style="width:50%">
+        <img class="mySlides2" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\suite\suite3.jpg"
+          style="width:50%">
+        
 
-    <div id="room3place">
+        <button class="button-left" onclick="plusDivs2(-1)">&#10094;</button>
+        <button class="button-right" onclick="plusDivs2(1)">&#10095;</button>
+      </div>
+
+
+      <div class="texto" id="room3place">
         <a>Standard triple room with pool view</a>
         <ul>
-            <li>Air conditioning</li>
-            <li>Free high speed Internet</li>
-            <li>Hairdryer</li>
-            <li>Balcony</li>
-            <li>Bath or shower</li>
-            <li>Towels</li>
-            <li>TV</li>
+          <li>Air conditioning</li>
+          <li>Free high speed Internet</li>
+          <li>Hairdryer</li>
+          <li>Balcony</li>
+          <li>Bath or shower</li>
+          <li>Towels</li>
+          <li>TV</li>
         </ul>
-    </div>
+      </div>
 
+      <div>
+        <img class="mySlides3" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\triple\triple1.jpg"
+          style="width:50%">
+        <img class="mySlides3" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\triple\triple2.jpg"
+          style="width:50%">
+        <img class="mySlides3" src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\triple\triple3.jpg"
+          style="width:50%">
 
+        <button class="button-left" onclick="plusDivs3(-1)">&#10094;</button>
+        <button class="button-right" onclick="plusDivs3(1)">&#10095;</button>
+      </div>
 
-
+      <script src="rooms.js"></script>
+  
 </body>
 
 </html>
