@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color:transparent;border-top: 20px;border-bottom: 0px;border-left: 20px; border-right: 20px;border-style:solid; border-color:#270303; padding: 1cm;text-align: center;">
 
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -10,6 +10,7 @@
     <div id="tripmap">
         <a>You have planned a tour on </a>
         <script>
+
             $("#tripmap").append(localStorage.getItem("tripdate"));
         </script>
         <a>that will cover </a>
@@ -18,16 +19,16 @@
 
     </div>
 
-   <div id="carthage">
-    <script>
-        $('#carthage').append(localStorage.getItem("Carthage Land Tunis"));
-    </script>
-   </div>
+    <div id="carthage">
+        <script>
+            $('#carthage').append(localStorage.getItem("Carthage Land Tunis"));
+        </script>
+    </div>
 
     <div id="sidiboussaid">
         <script>
             $('#sidiboussaid').append(localStorage.getItem("Sidi BoussAid"));
-         </script>
+        </script>
     </div>
 
     <div id="tabarka">
@@ -35,21 +36,34 @@
             $('#tabarka').append(localStorage.getItem("Tabarka"));
         </script>
     </div>
-   
-    <div id="sousse">
+
+    <div id="soussee">
         <script>
-            $('sousse#').append(localStorage.getItem("Sousse"));
-        </script>
-    </div>
-   
-    <div id="djerba">
-        <script>
-            $('#djerba').append(localStorage.getItem("Djerba"));
-    
-    
+            $('#soussee').append(localStorage.getItem("Sousse"));
         </script>
     </div>
 
+    <div id="djerba">
+        <script>
+            $('#djerba').append(localStorage.getItem("Djerba"));
+
+
+        </script>
+
+
+    </div>
+    <br>
+
+    
+    <br>
+
+    <div id="ridingtype">
+        <script>
+            $('#ridingtype').append('The trip will be for '+localStorage.getItem("nbrperson")+' people and You will be travelling by '+localStorage.getItem("ridetype"));
+
+
+        </script>
+    </div>
 
 </body>
 

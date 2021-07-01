@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html
-  style="background-color:transparent;border-top: 20px;border-bottom: 0px;border-left: 20px; border-right: 20px;border-style:solid; border-color:#270303; padding: 1em;">
+  style="background-color:transparent;border-top: 20px;border-bottom: 0px;border-left: 20px; border-right: 20px;border-style:solid; border-color:#270303; padding: 1cm;text-align: center;">
 
 <head >
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -30,7 +30,7 @@
   <option value="Sousse">Visit Sousse</option>
 </select>
 
-<button id="add" onclick="handletsubmit()" >add to your trip</button>
+<button id="add" onclick="addtrip()" >add to your trip</button>
 <button id="remove" onclick="removetrip()" >Clear all trips</button>
 
 <br>
@@ -66,8 +66,8 @@
 <div id="divpersons"></div>
 <br>
 
-<label for="commenttrip">add a comment:</label>
-<textarea id="commenttrip" rows="4" cols="50" name="comment" form="usrform"></textarea>
+<label for="commenttrip"></label>
+<textarea id="commenttrip" rows="4" cols="50" name="comment" form="usrform" placeholder="add a comment if you want"></textarea>
 <br>
 <br><br>
 <button id="submittrip">Submit</button>

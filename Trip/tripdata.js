@@ -25,14 +25,21 @@ function tripdatefunction() {
 
 
     tripdate = document.getElementById("tripdate").value;
-    localStorage.setItem("tripdate", tripdate);
+    if(visits.length===0){
+        localStorage.clear();
+        localStorage.setItem("tripdate", tripdate);
     document.getElementById("date").innerHTML = "";
     $('#date').append(tripdate)
+    }
+
+    else {localStorage.setItem("tripdate", tripdate);
+    document.getElementById("date").innerHTML = "";
+    $('#date').append(tripdate)}
 
 }
 
 
-function handletsubmit() {
+function addtrip() {
 
     i = document.getElementById('visits').value;
 
@@ -52,8 +59,11 @@ function removetrip() {
 var rides = [];
 $('#addride').click(function () {
 
+    document.getElementById('ride').innerHTML = ""
+    rides = [];
     $('#ride').append('<li>' + $('#ridetype').val() + '</li>');
-
+    riding = document.getElementById("ridetype").value;
+    localStorage.setItem("ridetype", riding);
     rides.push($('#ridetype').val());
 })
 
@@ -62,14 +72,20 @@ $('#addride').click(function () {
 var persons = [];
 $('#addpersons').click(function () {
 
+    document.getElementById('divpersons').innerHTML = ""
+    persons = [];
+
     $('#divpersons').append('<li>' + $('#nbrperson').val() + '</li>');
+
+    occupants = document.getElementById("nbrperson").value;
+    localStorage.setItem("nbrperson", occupants);
 
     persons.push($('#nbrperson').val());
 })
 
 $('#submittrip').click(function () {
 
-    if ((visits.length === 0) || (($('#tripdate').val() === undefined)) || (rides.length===0) || (persons.length===0)) {
+    if ((visits.length === 0) || (($('#tripdate').val() === undefined)) || (rides.length === 0) || (persons.length === 0)) {
         alert('please fill all field')
     }
     else window.open("file:///C:/Users/Dream%20Team/Desktop/project1/hotel-alpha-1stproject/Trip/tripresume.html");
