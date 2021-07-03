@@ -8,11 +8,12 @@
     <script type="text/javascript" src="home.js"></script>
     <link rel="stylesheet" href="home.css">
 
+	<div class="content">
+		
+		<img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\logo.png" style="width:250px; height: 150px">
+	  </div>
+
 </head>
-
-
-
-
 
     <body class="news">
         <header>
@@ -137,10 +138,8 @@ img {vertical-align: middle;}
   <span class="dot"></span> 
 </div>
 
-<div class="content">
-    <h1>Welcome to RBK Hotel</h1>
-    <img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\logo.png" style="width:250px; height: 150px">
-  </div>
+<h1>Welcome to RBK Hotel</h1>
+
 <script>
 var slideIndex = 0;
 showSlides();
@@ -203,15 +202,11 @@ function showSlides() {
 <br>
 <br>
 
-
-
-
-
     <div id="Availability">
 
 
         <!DOCTYPE html>
-<!-- saved from url=(0014)about:internet -->
+
 <html class="en-GB">
 <head>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
@@ -309,9 +304,7 @@ function showSlides() {
 
 </head>
 <body>
-	
-	
-	
+		
 	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 		<script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		
@@ -348,7 +341,7 @@ function showSlides() {
 						 }
 
 					});
-					// formating the date
+					
 					var date = new Date(),
 					output = document.getElementById( 'output' ),
 					dateString = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear().toString().substr(2,2);
@@ -356,42 +349,24 @@ function showSlides() {
 					$("#Startdate").datepicker('setDate', date);
 
 				});
-	// ]]]]><![CDATA[>
-	//--><!]]>
+	
 		</script>
 
 		<div class="mod-search-widget">
-			<!--Change to the URL of the partner.  If the white label should be restricted by a cluster, then also include that in the action URL. 
-			e.g. https://partners.eviivo.com/LANGUAGE/CHANNEL/c/CLUSTER/ -->
-			<!-- 
-			Available languages 
-			en-GB - UK
-			fr-FR - French
-			de-DE - German
-			es-ES - Spanish
-			pt-PT - Portuguese 
-			pt-BR - Brasilian
-			it-IT - Italian
-			-->
+		
 			
 			<form id="availabilitySearchResults" action="https://via.eviivo.com/DesSens40000/?refresh_all=true" method="GET" name="availabilitySearchResults"> 
 
-			<!--Change to the destination or cluster that should be pre-filled in the search form.  Spaces should be replaced with hyphen, commas replaces with two hypens.
-			
-			Change the type from hidden to text if you want the destination input displayed in the search widget.-->
-			
-			<!--Change the value below to have the results screen load on a particular view   1=list, 2=grid or 3=map view-->
 			<input name="viewtype" value="2" type="hidden">		
 
-			<!--Change the value below to have the results screen load specific currency   EUR, GBP, USD .etc-->
+			
 			<input name="currency" value="EUR" type="hidden">			
 			
 			<div class="mod-options-startDate mod-options">
 				<label for="Startdate">Check-in</label> 
 				<input id="Startdate" type="text" name="Startdate" value="" />
 			</div>	
-			<!--Choose default values to be displayed in the search form for nights, adults, and children by changing which item has SELECTED-->
-
+			
 			<div class="mod-options">
 			
 				<div class="mod-search-widget-date mod-search-widget-options">
@@ -456,27 +431,24 @@ function showSlides() {
 						<option value="14">14</option>
 					</select>
 				</div>
-				
-				
+								
 			</div>
-			
-			<!--This code hides the location field in the search results. Remove it if you want it to show-->
+						
 			<input name="hli" value="true" type="hidden">
-			
-			<!--Change the text in value="" to choose the text displayed on the button.-->
 			
 				<input class="availability" value="Book Now" type="Submit">
 			
 			</form>
 
 	</div>
-	  
-	  
+
+<br>
+<br>
+<h1>Meet Our Staff</h1>
+<img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\staff.jpg" alt="">
 
 
 </body>
 
 </html>
-    </div>
-    
-    </body>
+  

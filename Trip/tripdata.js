@@ -14,7 +14,7 @@ $('#add').click(function () {
     if ((result === false) && (($('#visits').val()) !== '')) {
         visits.push($('#visits').val())
 
-        $('#triplist').append('<li>' + $('#visits').val() + '</li>')
+        $('#triplist').append( $('#visits').val() + '<br>')
 
     }
 
@@ -61,7 +61,7 @@ $('#addride').click(function () {
 
     document.getElementById('ride').innerHTML = ""
     rides = [];
-    $('#ride').append('<li>' + $('#ridetype').val() + '</li>');
+    $('#ride').append($('#ridetype').val() );
     riding = document.getElementById("ridetype").value;
     localStorage.setItem("ridetype", riding);
     rides.push($('#ridetype').val());
@@ -75,7 +75,7 @@ $('#addpersons').click(function () {
     document.getElementById('divpersons').innerHTML = ""
     persons = [];
 
-    $('#divpersons').append('<li>' + $('#nbrperson').val() + '</li>');
+    $('#divpersons').append($('#nbrperson').val() );
 
     occupants = document.getElementById("nbrperson").value;
     localStorage.setItem("nbrperson", occupants);
