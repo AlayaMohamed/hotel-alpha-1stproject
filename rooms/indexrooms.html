@@ -68,9 +68,10 @@
           <li>Hairdryer</li>
           <li>All rooms are non-smoking</li>
           <li>Flat screen TV with Sat channels & music</li>
-
-
-
+</ul>
+<a href="https://via.eviivo.com/DesSens40000">
+<button class="button" >Book Now</button>
+</a>
     </div>
     <div class="column right">
 
@@ -82,14 +83,14 @@
 
         <div class="mySlides1">
           <img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\double\double2.jpg"
-            style="width: 680px;height: 450px;">
+            style="width: 780px;height: 450px;">
         </div>
 
         <div class="mySlides1">
           <img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\double\double3.jpg"
-            style="width: 680px;height: 450px;">
+            style="width: 780px;height: 450px;">
         </div>
-
+<br>
         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
       </div>
@@ -106,8 +107,10 @@
   <div class="row">
 
     <div class="column left" style="background-color:#aaa;">
-      <p style="font-size: 24px;">Executive Suites are an ideal option for families or couples looking for ultra-comfort and convenience while on holidays. These suites feature a bedroom with double bed and a separate living room with a sofa that can be converted into a double bed. 
-        Executive suites combine contemporary furnishings in elegant earthly shades and ample spaces and create the perfect  </p>
+      <p style="font-size: 24px;">Executive Suites are an ideal option for families or couples looking for ultra-comfort and convenience while on holidays. 
+        These suites feature a bedroom with double bed and a separate living room with a sofa that can be converted into a double bed. 
+        Executive suites combine contemporary furnishings in elegant earthly shades and ample spaces and create the perfect environment for rest . 
+         </p>
 <ul style="text-align: left;font-size: 24px;margin-left: 18%;">
       <li>Double or twin beds</li>
       <li>One single bed</li>
@@ -118,8 +121,10 @@
       <li>Hairdryer</li>
       <li>All rooms are non-smoking</li>
       <li>Flat screen TV with Sat channels & music</li>
-     
-    </ul>
+     </ul>
+      <a href="https://via.eviivo.com/DesSens40000">
+        <button class="button" >Book Now</button>
+        </a>
 
     </div>
     <div class="column right">
@@ -139,7 +144,7 @@
           <img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\suite\suite3.jpg"
             style="width: 780px;height: 450px;">
         </div>
-
+<br>
         <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
       </div>
@@ -157,34 +162,29 @@
 
     <div class="column left" style="background-color:#aaa;">
 
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-
+      <p style="font-size: 24px;">Couples travelling with kids will adore these spacious and bright Family Rooms. 
+        They are located on the ground floor of the main building for easy access and are ideal for families who wish to share the same room with their children yet need to keep some privacy. 
+        Family Rooms are well-appointed with contemporary furnishings and colourful details that create a pleasant setting.  </p>
+<ul style="text-align: left;font-size: 24px;margin-left: 18%;">
+      <li>Double bed + One single bed </li>
+      <li>three single beds</li>
+      <li>Εxtra bed can be added</li>
+      <li>Bathtub or shower</li>
+      <li>Balcony or terrace with panoramic sea views</li>
+      <li>Free Wi-Fi</li>
+      <li>Hairdryer</li>
+      <li>All rooms are non-smoking</li>
+      <li>Flat screen TV with Sat channels & music</li>
+     
+    </ul>
+    
+   <a href="https://via.eviivo.com/DesSens40000">
+<button class="button" >Book Now</button>
+</a>
 
     </div>
     <div class="column right" >
       <div class="slideshow-container">
-        <div class="mySlides3">
-          <img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\triple\triple1.jpg"
-            style="width: 780px;height: 450px;">
-        </div>
-
         <div class="mySlides3">
           <img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\triple\triple2.jpg"
             style="width: 780px;height: 450px;">
@@ -195,6 +195,11 @@
             style="width: 780px;height: 450px;">
         </div>
 
+        <div class="mySlides3">
+          <img src="C:\Users\Dream Team\Desktop\project1\hotel-alpha-1stproject\photos\triple\triple1.jpg"
+            style="width: 780px;height: 450px;">
+        </div>
+<br>
         <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
       </div>
@@ -211,7 +216,7 @@
     }
 
     .mySlides1,
-    .mySlides2 {
+    .mySlides2, .mySlides3 {
       display: none
     }
 
@@ -260,9 +265,10 @@
 
   <script>
     var slideIndex = [1, 1];
-    var slideId = ["mySlides1", "mySlides2"]
+    var slideId = ["mySlides1", "mySlides2" , "mySlides3"]
     showSlides(1, 0);
     showSlides(1, 1);
+    showSlides(1, 2);
 
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);
@@ -272,7 +278,7 @@
       var i;
       var x = document.getElementsByClassName(slideId[no]);
       if (n > x.length) { slideIndex[no] = 1 }
-      if (n < 1) { slideIndex[no] = x.length }
+      if (n < 2) { slideIndex[no] = x.length }
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
