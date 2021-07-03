@@ -86,7 +86,7 @@ $('#addpersons').click(function () {
 $('#submittrip').click(function () {
 
     if ((visits.length === 0) || (($('#tripdate').val() === undefined)) || (rides.length === 0) || (persons.length === 0)) {
-        alert('please fill all field')
+        alert('Please fill all fields')
     }
     else window.open("file:///C:/Users/Dream%20Team/Desktop/project1/hotel-alpha-1stproject/Trip/tripresume.html");
 
