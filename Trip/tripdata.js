@@ -38,6 +38,25 @@ function tripdatefunction() {
 
 }
 
+var emailing=[];
+function emailfunction(){
+    email1=document.getElementById("emailset").value;
+
+    if(visits.length===0){
+        localStorage.clear();
+        localStorage.setItem("emailset", email1);
+    document.getElementById("email").innerHTML = "";
+    $('#email').append(email1)
+    emailing.push($('#emailset').val());
+    }
+
+    else {localStorage.setItem("emailset", email1);
+    document.getElementById("email").innerHTML = "";
+    $('#email').append(email1)}
+    emailing.push($('#emailset').val());
+}
+
+
 
 function addtrip() {
 
@@ -85,7 +104,7 @@ $('#addpersons').click(function () {
 
 $('#submittrip').click(function () {
 
-    if ((visits.length === 0) || (($('#tripdate').val() === undefined)) || (rides.length === 0) || (persons.length === 0)) {
+    if ((visits.length === 0) || (($('#tripdate').val() === undefined)) || (rides.length === 0) || (persons.length === 0)||(emailing.length === 0)) {
         alert('Please fill all fields')
     }
     else window.open("file:///C:/Users/Dream%20Team/Desktop/project1/hotel-alpha-1stproject/Trip/tripresume.html");
